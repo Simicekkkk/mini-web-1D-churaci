@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Školní E-Sport Turnaj 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Školní E-Sport Turnaj</h1>
+            <p>Přijďte změřit své síly v největším herním klání tohoto pololetí! Soutěžíme o hodnotné ceny, prestiž a titul školního šampiona v oblíbených titulech.</p>
+        </header>
+
+        <main>
+            <section class="program">
+                <h2>Co nabízíme / Program</h2>
+                <ul>
+                    <li>Turnaj v League of Legends (5v5)</li>
+                    <li>Soutěž v Counter-Strike 2 (2v2)</li>
+                    <li>Volná herní zóna s konzolemi PS5</li>
+                    <li>Občerstvení a energetické nápoje zdarma</li>
+                    <li>Finálový stream s komentářem v aule</li>
+                </ul>
+            </section>
+
+            <section class="prihlaska">
+                <h2>Registrace do turnaje</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Jméno a příjmení:</label>
+                        <input type="text" id="name" name="name" placeholder="Např. Jan Novák" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="game">Vyber si hru:</label>
+                        <select id="game" name="game">
+                            <option value="lol">League of Legends</option>
+                            <option value="cs2">Counter-Strike 2</option>
+                            <option value="fc24">EA Sports FC 24</option>
+                            <option value="spectator">Divák / Fanoušek</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Zpráva pro organizátory (tým, dotaz):</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Odeslat přihlášku</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Autoři: Adam Gamer, Petr Programátor | Datum: 3. března 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
