@@ -79,4 +79,29 @@ footer {
     margin-top: 30px;
     font-size: 0.9rem;
     color: #888;
-}/* CSS Document */
+}
+
+.herni-odkazy {
+  position: fixed; /* Ikonky budou na kraji stránky i při rolování */
+  top: 50%; /* Umístění na střed výšky stránky */
+  transform: translateY(-50%); /* Jemné doladění na střed */
+  right: 10px; /* Vzdálenost od pravého okraje stránky */
+  display: flex; /* Zobrazení jako flexbox pro snadné uspořádání */
+  flex-direction: column; /* Ikonky budou pod sebou */
+  gap: 10px; /* Mezeza mezi ikonkami */
+  z-index: 100; /* Zajištění, aby byly ikonky vidět nad ostatním obsahem */
+}
+
+.herni-odkazy a img {
+  width: 50px; /* Šířka ikonek - můžeš změnit */
+  height: 50px; /* Výška ikonek - můžeš změnit */
+  object-fit: contain; /* Zajištění, aby se ikonky vešly do zadaných rozměrů */
+  border: 1px solid #ccc; /* Volitelný ohraničení ikonek */
+  border-radius: 5px; /* Volitelné zaoblení rohů */
+  transition: transform 0.2s ease-in-out; /* Volitelný efekt při najetí myší */
+}
+
+.herni-odkazy a img:hover {
+  transform: scale(1.1); /* Volitelný efekt při najetí myší */
+}
+/* CSS Document */
