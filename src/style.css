@@ -104,4 +104,49 @@ footer {
 .herni-odkazy a img:hover {
   transform: scale(1.1); /* Volitelný efekt při najetí myší */
 }
+.sekce-s-fotkou {
+    display: flex; /* Zapne Flexbox - dá prvky vedle sebe */
+    align-items: center; /* Vertikálně zarovná fotku a text na střed */
+    gap: 20px; /* Mezera mezi fotkou a textem */
+    margin: 30px 0; /* Odsazení celé sekce od ostatního obsahu */
+    background-color: #16213e; /* Volitelné: pozadí sekce, aby ladilo s dark mode */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Styl pro samotnou fotku z hraní */
+.gameplay-img {
+    flex: 0 0 40%; /* Fotka zabere přesně 40% šířky kontejneru */
+    max-width: 40%; /* Pojistka šířky */
+    height: auto; /* Zachová poměr stran */
+    border-radius: 10px; /* Pěkné kulaté rohy */
+    border: 3px solid #e94560; /* Volitelné: barevné ohraničení (gaming styl) */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Jemný stín pro hloubku */
+}
+
+/* Styl pro textový obsah vedle fotky */
+.text-obsah {
+    flex: 1; /* Zabere zbytek šířky (cca 60%) */
+}
+
+.text-obsah h3 {
+    margin-top: 0; /* Odstraní horní okraj nadpisu */
+    color: #e94560; /* Barva nadpisu */
+}
+
+/* Responzivita: Na mobilu (menší obrazovka) dá fotku nad text */
+@media (max-width: 768px) {
+    .sekce-s-fotkou {
+        flex-direction: column; /* Změní směr na sloupec */
+        text-align: center; /* Zarovná text na střed */
+    }
+
+    .gameplay-img {
+        max-width: 80%; /* Na mobilu fotku trochu zvětšíme */
+        flex: 0 0 100%; /* Zabere plnou šířku řádku */
+        margin-bottom: 15px; /* Mezera pod fotkou, než začne text */
+    }
+}
 /* CSS Document */
+
+
